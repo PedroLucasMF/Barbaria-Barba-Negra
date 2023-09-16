@@ -1,0 +1,112 @@
+:root{
+    --grey: #b1b1b1;
+    --lightgrey: #c4c4c4;
+    --midlight: #ebebeb;
+    --light: #ffffff;
+    --dark: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #000000;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 10px;
+}
+header > ul {
+    color: var(--light);
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    width: 80%;
+    border: 1px solid red;
+    list-style: none;
+}
+
+#navitens{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    border: 1px solid red;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ddItem{
+    position: absolute;
+    background-color: var(--dark);
+    display: none;
+}
+.ddItem a {
+    display: block;
+    background-color: var(--dark);
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#homeimg{
+    width: 200px;
+    border-radius: 100px;
+}
+
+#navlogo{
+    width: 20%;
+}
+
+#navlogo > img{
+    width: 50px;
+    border-radius: 50%;
+}
+#promos{
+    border: 1px solid black;
+}
+
+#inico{
+    font-family: 'Pirata One', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    width: 80%;
+    border: 1px solid red;
+    display: inline-block;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    list-style: none;
+}
+
+nav li a:hover{
+    background-color: var(--lightgrey);
+    color: var(--dark);
+    padding: 2px;
+    border-radius: 50px;
+}
+
+.dropdown:hover .ddItem{
+    display: block;
+}
