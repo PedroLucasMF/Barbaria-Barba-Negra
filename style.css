@@ -53,12 +53,12 @@ section{
 
 .ddItem{
     position: absolute;
-    background-color: var(--lightgrey);
+    background-color: var(--midlight);
     display: none;
 }
 .ddItem a {
     display: block;
-    background-color: var(--lightgrey);
+    background-color: var(--midlight);
     margin: 10px;
     justify-content: center;
     text-align: center;
@@ -110,6 +110,6 @@ nav li a:hover{
 
 .dropdown:hover .ddItem{
     display: block;
-    background-color: var(--lightgrey);
+    background-color: var(--midlight);
 
 }
