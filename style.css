@@ -20,8 +20,7 @@ header{
     justify-content: end;
     align-items: center;
     flex-direction: row;
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--midlight);
     padding: 10px;
 }
 header > ul {
@@ -32,12 +31,14 @@ header > ul {
     width: 80%;
     border: 1px solid red;
     list-style: none;
+    color: var(--dark);
 }
 
 #navitens{
     justify-content: space-around;
     display: flex;
     flex-direction: row;
+    
 }
 
 section{
@@ -52,12 +53,12 @@ section{
 
 .ddItem{
     position: absolute;
-    background-color: var(--dark);
+    background-color: var(--lightgrey);
     display: none;
 }
 .ddItem a {
     display: block;
-    background-color: var(--dark);
+    background-color: var(--lightgrey);
     margin: 10px;
     justify-content: center;
     text-align: center;
@@ -66,7 +67,7 @@ section{
 
 #homeimg{
     width: 200px;
-    border-radius: 100px;
+    
 }
 
 #navlogo{
@@ -75,7 +76,6 @@ section{
 
 #navlogo > img{
     width: 50px;
-    border-radius: 50%;
 }
 #promos{
     border: 1px solid black;
@@ -85,6 +85,7 @@ section{
     font-family: 'Pirata One', cursive;
     padding: 0;
     margin: 0;
+    background-color: var(--light);
 }
 
 nav{
@@ -94,14 +95,14 @@ nav{
 }
 nav li a{
     text-decoration: none;
-    color: white;
+    color: var(--dark);
 }
 nav ul{
     list-style: none;
 }
 
 nav li a:hover{
-    background-color: var(--lightgrey);
+    background-color: var(--light);
     color: var(--dark);
     padding: 2px;
     border-radius: 50px;
@@ -109,4 +110,6 @@ nav li a:hover{
 
 .dropdown:hover .ddItem{
     display: block;
+    background-color: var(--lightgrey);
+
 }
