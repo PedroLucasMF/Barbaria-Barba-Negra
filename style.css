@@ -67,6 +67,7 @@ section{
 #homeimg{
     width: 200px;
     border-radius: 100px;
+    border: 1px solid ;
 }
 
 #navlogo{
