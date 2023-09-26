@@ -13,27 +13,63 @@
 }
 body{
     color: #000000;
+    height: 100vh;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     background-color: var(--midlight);
     padding: 10px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 header > ul {
-    color: var(--light);
     display: flex;
     justify-content: end;
     flex-direction: row;
     width: 80%;
-    border: 1px solid red;
+    
     list-style: none;
     color: var(--dark);
 }
+main{
+    margin-top: 50px;
+}
 
+footer{
+    background-color: #c4c4c4;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logof{
+    border-radius: 49%;
+    width: 50px;
+    
+
+}
+
+#logo-footer{
+    padding-top: 50px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 #navitens{
     justify-content: space-around;
     display: flex;
@@ -41,8 +77,11 @@ header > ul {
     
 }
 
+#logox{
+    width: 70px;
+}
+
 section{
-    border: 1px solid red;
     height: 20em;
     display: flex;
     justify-content: center;
@@ -67,20 +106,22 @@ section{
 
 #homeimg{
     width: 200px;
-    
-    border-radius: 100px;
-    border: 1px solid ;
 }
 
 #navlogo{
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navlogo > img{
     width: 50px;
+    
 }
 #promos{
     border: 1px solid black;
+    height: 500px;
 }
 
 #inico{
@@ -112,6 +153,53 @@ nav li a:hover{
 
 .dropdown:hover .ddItem{
     display: block;
-    background-color: var(--midlight);
+    background-color: #ebebeb;
+    border-radius: 5px 5px 3px 3px;
+    margin-top: 2px;
 
+}
+.carousel-inner, .carousel-item{
+    height: 500px;
+    
+}
+
+#carouselExampleCaptions{
+    width: 700px;
+    z-index: 0;
+}
+
+.cardpromo{
+    width: 200px;
+    height: 300px;
+    background-color: #000000;
+    transition: 1s;
+}
+.cardimg{
+    width: 170px;
+    margin: 5px;
+    display: none;
+}
+
+#cards{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--light);
+}
+
+.cardpromo:hover{
+    background-color: #0000006c;
+    background-image: url(imagens/BarbaNegra.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-x: 61px;
+    
+}
+
+.cardpromo:hover > .cardimg{
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
 }
