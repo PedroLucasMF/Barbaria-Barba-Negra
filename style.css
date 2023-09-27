@@ -10,6 +10,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 body{
     color: #000000;
@@ -23,16 +25,14 @@ header{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background-color: var(--midlight);
-    padding: 10px;
-    border-bottom: 1px solid black;
+    background-color: var(--light);
     position: fixed;
     top: 0;
     z-index: 1;
 }
 header > ul {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     flex-direction: row;
     width: 80%;
     
@@ -51,6 +51,10 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: fixed end;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
 }
 
 .logof{
@@ -68,12 +72,16 @@ footer{
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+}
 
+#direitos{
+    margin: 15px;
 }
 #navitens{
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
+    width: 100%;
     
 }
 
@@ -92,16 +100,17 @@ section{
 
 .ddItem{
     position: absolute;
-    background-color: var(--midlight);
-    display: none;
+    background-color: var(--light);
+    display: none; 
+    border: 1px solid black;
 }
 .ddItem a {
     display: block;
-    background-color: var(--midlight);
-    margin: 10px;
+    background-color: var(--light);
+    margin: 9px;
     justify-content: center;
     text-align: center;
-    padding: 5px;
+   
 }
 
 #homeimg{
@@ -109,7 +118,7 @@ section{
 }
 
 #navlogo{
-    width: 20%;
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,20 +129,48 @@ section{
     
 }
 #promos{
-    border: 1px solid black;
-    height: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0.616);
+    background-image: url(imagens/pexels-nikolaos-dimou-1319460.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+   
 }
 
 #inico{
+    width: 100%;
     font-family: 'Pirata One', cursive;
     padding: 0;
     margin: 0;
     background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#banner{
+    width: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 50px;
 }
 
 nav{
-    width: 80%;
-    border: 1px solid red;
+    width: 90%;
     display: inline-block;
 }
 nav li a{
@@ -149,35 +186,37 @@ nav li a:hover{
     color: var(--dark);
     padding: 2px;
     border-radius: 50px;
+    color: rgb(150, 139, 76);
 }
 
 .dropdown:hover .ddItem{
     display: block;
-    background-color: #ebebeb;
+    background-color: var(--light);
     border-radius: 5px 5px 3px 3px;
-    margin-top: 2px;
-
-}
-.carousel-inner, .carousel-item{
-    height: 500px;
-    
 }
 
 #carouselExampleCaptions{
-    width: 700px;
+    width: 780px;
     z-index: 0;
 }
 
 .cardpromo{
-    width: 200px;
-    height: 300px;
+    width: 220px;
+    height: 320px;
     background-color: #000000;
-    transition: 1s;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 11px double #f5f5f5;
 }
 .cardimg{
     width: 170px;
     margin: 5px;
-    display: none;
+    opacity: 0;
+    transition: 1s;
 }
 
 #cards{
@@ -186,7 +225,16 @@ nav li a:hover{
     flex-direction: row;
     justify-content: space-around;
     color: var(--light);
+    background-image: url(imagens/imagem_pentes.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+    
 }
+
+
 
 .cardpromo:hover{
     background-color: #0000006c;
@@ -199,7 +247,41 @@ nav li a:hover{
 }
 
 .cardpromo:hover > .cardimg{
-    display: block;
-    padding-left: 20px;
-    padding-top: 20px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 0.7;
+    
+}
+
+.cardpromo:hover > img{
+    transition: 1s;
+}
+
+
+.cardpromo:hover > .descri{
+    opacity: 1;
+}
+
+.descri{
+    opacity: 0;
+    transition: 1s;
+    margin: 2px;
+}
+#bg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+#bg1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.76);
 }
