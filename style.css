@@ -29,20 +29,27 @@ header{
     position: fixed;
     top: 0;
     z-index: 1;
-    padding-top: 10px;
+    padding-top: 30px;
     height: 80px;
 }
 header > ul {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 80%;
-    
+    width: 100%;
+    position: relative;
     list-style: none;
     color: var(--dark);
+    text-decoration: none;
+    padding-left: 0!important;
 }
 main{
     margin-top: 50px;
+}
+a{
+    text-decoration: none!important; 
+    list-style: none;
+    color: #000000!important;
 }
 
 footer{
@@ -80,7 +87,7 @@ footer{
     margin: 15px;
 }
 #navitens{
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -104,14 +111,22 @@ section{
     position: absolute;
     background-color: var(--light);
     display: none; 
+    z-index: 1;
     
+}
+#dd1{
+    left: 35px;
 }
 .ddItem a {
     display: block;
     background-color: var(--light);
-    margin: 9px;
     justify-content: center;
     text-align: center;
+    padding: 5px;
+    position: relative;
+    padding-top: 5px;
+    margin-right: 0px;
+    right: 30px;
    
 }
 
@@ -124,6 +139,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 #navlogo > img{
@@ -168,33 +184,22 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-left: 50px;
+    position: relative;
+    
 }
 
-nav{
-    width: 90%;
-    display: inline-block;
+li a:hover{
+    background-color: var(--light)!important;
+    color: var(--dark)!important;
+    color: rgb(150, 139, 76)!important;
 }
-nav li a{
-    text-decoration: none;
-    color: var(--dark);
-}
-nav ul{
-    list-style: none;
-}
-
-nav li a:hover{
-    background-color: var(--light);
-    color: var(--dark);
-    padding: 2px;
-    border-radius: 50px;
-    color: rgb(150, 139, 76);
+.dropdown{
+    position: relative;
 }
 
 .dropdown:hover .ddItem{
-    display: block;
-    background-color: var(--light);
-    border-radius: 5px 5px 3px 3px;
+    display: block!important;
+    background-color: var(--light)!important;
 }
 
 #carouselExampleCaptions{
@@ -217,7 +222,6 @@ nav li a:hover{
 .cardimg{
     width: 130px;
     height: 130px;
-    margin: 5px;
     opacity: 0;
     transition: 1s;
     border-radius: 10px;
@@ -273,7 +277,6 @@ nav li a:hover{
 .descri{
     display: none;
     transition: 0.1s;
-    margin: 2px;
     position: absolute;
 }
 #bg{
@@ -309,7 +312,7 @@ nav li a:hover{
 .titulocard{
     transition: 0.1s;
     font-size: 20px;
-    width: 500px;
+    
 }
 
 .cardpromo:hover > .titulocard{

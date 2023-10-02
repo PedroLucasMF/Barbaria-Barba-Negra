@@ -1,0 +1,57 @@
+@import url(../style.css);
+
+.servico{
+    display: flex;
+    flex-direction: column;
+}
+
+#td-servico-cabelo{
+    display: table;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 50%;
+    height: 40%;
+    position: relative;
+    right: 300px; 
+}
+
+#cabelo{
+    margin-top: 80px;
+   background-image: url(../imagens/cortes-background.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#corte-titu{
+    left: 375px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#background-corte{
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.753);
+    display: flex;
+    flex-direction: column;
+}
+
+#bttcorte{
+    display: flex;
+    position: relative;
+    left: 400px;
+    bottom: 70px;
+    
+}
+
+.butao{
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+}
