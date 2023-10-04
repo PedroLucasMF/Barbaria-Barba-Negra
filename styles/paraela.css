@@ -18,9 +18,9 @@
 
 #cabelo{
     margin-top: 80px;
-   background-image: url(../imagens/cortes-background.webp);
+   background-image: url(../imagens/corte-cabelo-feminino.webp);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
     background-size: cover;
     background-attachment: fixed;
     
@@ -68,7 +68,7 @@
 
 #barba{
 
-    background-image: url(../imagens/cortes-background.webp);
+    background-image: url(../imagens/unhas.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -107,7 +107,7 @@
 }
 
 #tratamento{
-    background-image: url(../imagens/tratamento-back.jpg);
+    background-image: url(../imagens/tratamento.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
