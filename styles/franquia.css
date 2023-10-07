@@ -1,0 +1,92 @@
+@import url(../style.css);
+
+.model-card{
+    background-color: black;
+    border: 3px rgb(255, 255, 255);
+    width: 200px;
+    height: 250px;
+    border-style: double;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 4s;
+    border-radius: 10px;
+}
+body{
+    background-image: url(../imagens/BarbaNegra.png);
+    background-position: center center;
+}
+main{
+    margin-top: 80px;
+    background-color: rgba(245, 245, 245, 0.671);
+}
+
+
+header{
+    border: 1px solid black;
+}
+
+.model-card > h4 {
+    color: whitesmoke;
+    font-family: 'Pirata One', cursive;
+    font-size: 30px;
+    text-shadow: 3px 0px 2px rgb(0, 0, 0);
+}
+
+#rest:hover{
+    background-image: url(../imagens/Restaurante.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 250px , 200px;
+}
+#cyber:hover{
+    background-image: url(../imagens/cyber.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 250px , 200px;
+}
+#hospital:hover{
+    background-image: url(../imagens/Hospital.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 250px , 200px;
+}
+#edu:hover{
+    background-image: url(../imagens/EDUtec.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 250px , 200px;
+}
+
+
+.butoafrank{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0);
+    color: white;
+    font-weight: 300;
+    border: 1px solid white;
+    border-style: double;
+    transition: 1s;
+}
+
+
+.butoafrank:hover{
+    background-color: white;
+    color: black;
+}
+
+#divisao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#divisao2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
