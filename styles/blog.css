@@ -1,0 +1,14 @@
+@import url(../style.css);
+body{
+    padding-top: 30px;
+    height: 100%;
+}
+
+#posts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    flex-direction: column;
+}
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
     <header> 
         <ul id="navitens">
-            <li><a href="#inico">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li class="dropdown"><a href="para_ele.html">Para Ele</a>
                 <div class="ddItem" id="dd1">
                     <a href="para_ele.html">Cabelo</a>
@@ -28,8 +28,8 @@
               <img src="../imagens/BarbaNegra.png" alt="">
           </div>
 
-            <li><a href="perfil.html">Perfil</a></li>
             <li><a href="franquia.html">Franquia</a></li>
+            <li><a href="paginas/perfil.html">Perfil</a></li>
             <li class="dropdown"><a href="">Blog</a>
               <div class="ddItem" id="dd2">
                 <a href="">Posts</a>
@@ -40,6 +40,46 @@
         </ul>
     </header>
     <main>
+        <modal id="secformu">
+        <section id="formulario">
+          <form>
+            <fieldset>
+              <button id="fechaform">X</button>
+              <br>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" placeholder="Digite o Nome completo">
+
+            <label for="icpf">CPF</label>
+            <input type="number" name="cpf" id="icpf" placeholder="Digite o CPF">
+
+
+            <label for="icep">CEP</label>
+            <input type="number" name="CEP" id="icep" placeholder="Digite o CEP">
+
+            <label for="ilogradouro">Logradouro</label>
+            <input type="text" name="logradouro" id="ilogradouro" placeholder="Digite o logradouro">
+          
+            <label for="ibairro">Bairro</label>
+            <input type="text" name="bairro" id="ibairro" placeholder="Digite o bairro">
+            </fieldset>
+
+          </form>
+        </section>
+      </modal>
+      <section id="Profile">  
+        <section  class="treco" id="secspeara">
+          <section class="treco" id="itensec">
+            <button class="itembtt"><p>Comentarios</p></button>
+            <button class="itembtt"><p>Consultas Marcadas</p></button>
+            <button class="itembtt"><p>Sair</p></button>
+
+          </section>
+          <section class="treco" id="itensmodal">
+
+          </section>
+
+        </section>
+      </section>
 
     </main>
 
