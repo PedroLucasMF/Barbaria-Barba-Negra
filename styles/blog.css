@@ -11,7 +11,7 @@ body{
     overflow: auto;
     flex-direction: column;
     width: 70%;
-    height: 80%;
+    height: 100%;
 }
 
 #principlal{
@@ -31,9 +31,9 @@ body{
     overflow: auto;
     flex-direction: column;
     width: 30%;
-    margin: 20px;
+   
     padding-top: 400px;
-    height: 80%;
+    height: 70%;
 }
 .coment{
     width: 50%;
@@ -80,4 +80,10 @@ main{
     font-weight: 300;
     border: 1px solid white;
     border-style: double;
+}
+h1{
+    padding: 5px;
+}
+p{
+    padding: 5px;
 }
