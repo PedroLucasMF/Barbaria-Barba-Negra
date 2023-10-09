@@ -58,6 +58,12 @@ header{
     background-repeat: no-repeat;
     background-size: 250px , 200px;
 }
+#barba:hover{
+    background-image: url(../imagens/cara-estiloso.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 250px , 200px;
+}
 
 
 .butoafrank{

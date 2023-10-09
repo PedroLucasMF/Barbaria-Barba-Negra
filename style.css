@@ -297,18 +297,23 @@ li a:hover{
 }
 #barba-corte{
     height: 600px;
-    border-radius: 50px;
+    border-radius: 10px;
+    width: 200px;
+
 }
 #barba-corte1{
     height: 600px;
-    border-radius: 50px;
-    width: 500px;
+    border-radius: 10px;
+    width: 200px;
+    
 }
 #barba-corte2{
     height: 600px;
-    border-radius: 50px;
-    width: 500px;
+    border-radius: 10px;
+    width: 200px;
+
 }
+
 .titulocard{
     transition: 0.1s;
     font-size: 20px;
