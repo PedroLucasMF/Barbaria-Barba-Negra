@@ -26,8 +26,7 @@ body{
     align-items: center;
     justify-content: space-around;
     overflow: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 30%;
     margin: 20px;
     padding-top: 400px;
