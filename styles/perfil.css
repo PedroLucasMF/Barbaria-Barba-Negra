@@ -6,7 +6,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: black;
 }
 #formulario > form > fieldset{
     display: flex;
@@ -17,6 +16,7 @@
     justify-content: space-around;
     box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.75);
     color: aliceblue;
+    background-color: black;
 }
 .fechar{
     display: none;
@@ -32,11 +32,6 @@ form{
 #fechaform{
     padding: 2px;
     font-weight: 400;
-}
-
-#secformu{
-    position: absolute;
-    left: 585px;
 }
 
 #Profile{
@@ -80,6 +75,9 @@ form{
 }
 #itensmodalt{
     background-color: rgba(255, 255, 255, 0.541);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #perfil-img-nome{

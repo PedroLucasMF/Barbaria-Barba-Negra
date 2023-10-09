@@ -7,17 +7,8 @@ const bttcad = document.querySelector("#bttcadastrou")
 const fechacadatro = document.querySelector("#fechaform")
 const cmapoformu = document.querySelector("#secformu")
 const bttgomarca = document.querySelectorAll(".butao")
+const bttsair = document.querySelector("#sair")
 let bancodados = []
-
-
-bttgomarca.forEach(teste =>{
-
-    teste.addEventListener('click', ()=>{
-        console.log("oi")
-
-    })
-});
-
 
 if (localStorage.getItem("pedro")){
     bancodados = JSON.parse(localStorage.getItem("pedro"))
@@ -64,12 +55,9 @@ bttcad.addEventListener('click', (evento)=>{
         bancodados[bancodados.length] = registro
         localStorage.setItem("pedro", JSON.stringify(bancodados))
         cmapoformu.classList.add("fechar")
-        localStorage.setItem('logado', true)
-
     }
+
 })
-
-
 
 console.log(bancodados)
 

@@ -11,6 +11,7 @@ body{
     overflow: auto;
     flex-direction: column;
     width: 70%;
+    height: 80%;
 }
 
 #principlal{
@@ -19,6 +20,8 @@ body{
     align-items: center;
     flex-direction: row;
     background-color: rgba(255, 255, 255, 0.76);
+    width: 100%;
+    height: 100vh;
 }
 
 #Comentarios{
@@ -30,6 +33,7 @@ body{
     width: 30%;
     margin: 20px;
     padding-top: 400px;
+    height: 80%;
 }
 .coment{
     width: 50%;
@@ -56,11 +60,24 @@ main{
 }
 
 #postar-coment{
-    display: none;
+    display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 #postar-coment > form > textarea{
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+#gravar-coment{
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 300;
+    border: 1px solid white;
+    border-style: double;
 }
